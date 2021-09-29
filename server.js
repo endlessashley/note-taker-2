@@ -58,7 +58,7 @@ app.post('/api/notes', (req, res) => {
 });
 
 
-// DELETE route to delete note at given id
+// DELETE route to delete note by id
 app.delete('/api/notes/:id', (req, res) => {
     readAndDelete(req.params.id, './db/db.json');
     res.json(req.params.id);
